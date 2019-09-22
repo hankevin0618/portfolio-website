@@ -1,0 +1,510 @@
+/*
+Theme Name: Kevin's Portfolio Theme
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: black;
+}
+
+/* Front page*/
+
+.home {
+    display: block;
+    background-color: #ebf2e3;
+    
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #BFFFC7;
+    transition-duration: 0.5s;
+    
+}
+
+#main, footer {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: #eee;
+}
+
+#main, #header-inner, #footer-inner, #menu-menu-1 {
+    margin: 0 2em;
+}
+
+header, footer {
+    width: 100%;
+}
+
+header, footer {
+    background: rgb(235, 242, 227);
+    color: black;
+}
+
+nav {
+    background: black;
+    color: white;
+}
+
+#main { 
+    overflow: hidden;
+}
+
+#main-content {
+    width: 61%;
+    float: left;
+    margin: 1em 0;
+    padding: 0 1em;
+    line-height: 1.4em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 5px;
+}
+
+#sidebar {
+    width: 33%;
+    float: right;
+    color: #ccc;
+    line-height: 2em;
+}
+
+header {
+    padding: 2em 0;
+}
+
+
+#header-inner {
+    position: relative;
+}
+
+header h1 {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0.1em;
+    right: 0;
+    font-family: Lobster, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: regular;
+    font-size: 4.5em;
+    font-weight: lighter;
+    color: rgb(30, 30, 29);
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 1px rgb(209, 214, 203);
+    
+}
+
+footer {
+    padding: 2em 0;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+}
+
+.home footer {
+    padding: 2em 0;
+    background-color: transparent;
+    color: #32373c;
+    margin-top: 500px;
+    position: absolute;
+}
+
+#footer-inner {
+    text-align: center;
+}
+
+#footer-inner > *:first-child {
+    margin-top: 0;
+}
+
+#footer-inner > *:last-child {
+    margin-bottom: 0;
+}
+
+
+/*menu style*/
+
+#menu-menu-1 {
+    background-color: black;
+    line-height: 1em;
+    padding: 1em 0;
+    text-align: left;
+}
+
+#menu-menu-1 li {
+    display: inline-block;
+}
+
+#menu-menu-1 li a {
+    
+    padding: 0.5em 1em;
+    display: block;
+    color: #ebf2e3;
+    font-family: 'Verdana';
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-menu-1 li a:hover {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(142, 142, 142, 0.80) 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+    color: #f5de9c;
+
+}
+
+#menu-menu-1 li a.current {
+    color: #000;
+}
+
+#menu-menu-1 li ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    background-color: black;
+}
+
+#menu-menu-1 li:hover ul {
+    display: block;
+    
+}
+
+#menu-menu-1 li ul li {
+    float: none;
+    position: static;
+    line-height: 0;
+}
+
+/* Base  */
+
+.captioned-image {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.captioned-image:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.captioned-image p.caption {
+    margin: 5px 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+.captioned-image a:hover {
+    text-decoration: none;
+}
+
+#main-content > .float-left {
+    float: left;
+    margin: 5px 15px 5px 0px;
+}
+
+#main-content > .float-right {
+    float: right;
+    margin: 5px 0px 5px 15px;
+}
+
+#main-content figcaption {
+    line-height: 2em;
+    font-size: 3em;
+    text-align: center;
+}
+
+#main-content figcaption a {
+    color: #d68d0e;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+h2, h3 {
+    font-family: "Gilda Display";
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header
+{
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+}
+
+/*image hover effects*/
+.bg_hover {
+    height: 800px;
+    margin: 20px auto;
+    padding: 0;
+    animation: newBackground .7s;
+}
+
+.bg_hover img {
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0 9em;
+    transform: translateY(10%);
+}
+
+.bg_hover img:last-child {
+    display: none;
+}
+
+@keyframes newBackground {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;  
+    }
+}
+
+/* Meta Slider */
+
+.metaslider.metaslider-flex.metaslider-154.ml-slider {
+    width: 700px;
+    float: right;
+    background: white;
+}
+
+#metaslider_160 {
+    background: white;
+}
+
+.metaslider .flexslider {
+    padding-top: 3em;
+}
+
+.metaslider-154 ol {
+    top: 407px;
+}
+
+
+/* backgrounds */
+.category-uxui {
+    background-image: url(images/category-uxui.jpg); /*image from: https://wallscover.com/sprout.html#gal_post_5601_sprout-7.jpg*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.category-graphic-design {
+    background-image: url(images/category-graphic-design.jpg); /*from: https://www.pexels.com/photo/asphalt-countryside-dirty-ground-434406/*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-id-50 {
+    background-image: url(images/contact-bg.jpg);/*from: http://www.pixabay.com*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-id-43 {
+    background-image: url(images/about-bg.jpg); /*from: https://pixabay.com/en/giraffe-animal-woods-forest-zoo-2591608/*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.single-post {
+    background-image: url(images/post-bg.jpg); /*https://pixabay.com/en/vintage-texture-vintage-paper-retro-2714966/*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*About page*/
+
+.page-id-43 #main-content {
+    width: 90%;
+    float: left;
+    text-align: center;
+    font-size: larger;
+    margin: 1em 0;
+    transform: translatex(4%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.28) 100%);
+    border-radius: 5px;
+}
+
+.page-id-43 #main-content img {
+    border-radius: 100%;
+    border: 13px solid;
+    border-color: rgba(255, 255, 255, 0.46);
+
+}
+
+
+
+.page-id-43 #main-content p {
+    color: white;
+}
+
+
+/* post-categories */
+
+.post-categories {
+    line-height: 2em;
+    border-bottom: 1px solid;
+    border-bottom-style: dotted;
+}
+
+.post-categories li {
+    margin-bottom: 1em;
+    
+}
+
+.post-categories a {
+    font-style: italic;
+    color: #b7926f;
+    font-family: monospace;
+}
+
+/*categories*/
+
+.category-uxui,.category-graphic-design  h2, p {
+    text-align: center;
+}
+
+.category-uxui ul, #searchform {
+    text-align: left;
+}
+
+.category-uxui,.category-graphic-design p {
+    color: #a29c9c;
+}
+
+
+/* Posts */
+
+.author-date {
+    padding-bottom: 3em;
+}
+
+.single-post #main-content p {
+    text-align: left;
+    align-content: left;
+}
+
+/*logo*/
+.logo{
+    padding-left: 50em;
+}
+
+.category-uxui .logo {
+    padding-left: 0;
+}
+
+/* portfolio */
+
+#portfolio-temple {
+    text-align: center;
+    width: 90%;
+    height: 700px;
+    float: left;
+    margin: 1em 0;
+    padding: 0 1em;
+    line-height: 1.4em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 5px;
+    transform: translateX(4%);   
+    background-image:url('images/portfolio-temple.jpg'); /*image from: https://pixabay.com/en/water-sea-caribbean-background-1330252/*/
+    background-size: cover;
+    background-position: center top 20%;
+    background-repeat: no-repeat;
+}
+
+#portfolio-temple-container {
+    background-color: rgb(235, 242, 227);
+    margin: 0;
+    padding: 2em 0;
+    width: 100%;
+    height: 1000px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    
+
+    
+   #sidebar {
+        display: none;
+   }
+    
+    #header-inner h1 {
+        display: none;
+    }
+    
+    .logo {
+        padding-left: 0;
+        
+    }
+    
+    .bg_hover img{
+        width: 27em;
+        right: -13%;
+    }
+    
+    .bg_hover {
+        height
+    }
+    
+    .metaslider {
+        display: none;
+    }
+    
+    #portfolio-temple {
+        line-height: 3em;
+    }
+    
+    .logo {
+        transform: rotateX(-30%);
+    }
+    
+    .category #header-inner h1 {
+        display: none;
+    }
+    
+    .post-categories {
+        display: none;
+    }
+    
+    #main-content {
+        width: 90%;
+    }
+    
+    #main-content h2 {
+        line-height: 1em;
+    }
+    
+    .page-id-43 {
+        background-size: cover;
+    }
+    
+    #menu-menu-1{
+        display: none;
+    }
+    
+
+    
+}
+

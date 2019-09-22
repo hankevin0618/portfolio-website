@@ -1,0 +1,492 @@
+/*
+Theme Name: Kevin's Portfolio Theme
+Author: Kyungsoo Kevin Han
+Description: This website is a portfolio site to present the works and abilities in relation to the fields of Design and Development.
+Version: 1.0.0
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    color: black;
+}
+
+/*Logo*/
+.logo {
+	display: block;
+	text-align: center;
+}
+
+
+/* Front page*/
+
+#front-page-container {
+	margin: 5em;
+}
+
+#front-page-container img {
+	margin: auto;
+	display: block;
+}
+
+h1.welcoming-title {
+	font-size: 3em;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 5em 0 2em;
+
+}
+
+#design-container{
+	margin: auto;
+    display: block;
+    height: 25em;
+    padding-top: 3em;
+
+}
+
+.design-img-1 {
+	height: 30em;
+    width: 40%;
+    margin-right: 1em;
+    float: left;
+
+}
+
+.design-description-1 {
+	height: 30em;
+    width: 50%;
+    float: right;
+
+}
+
+#develop-container{
+	height: 31em;
+    display: block;
+    padding-top: 10em;
+}
+
+.develop-img-1{
+	margin: auto;
+    display: block;
+    height: 25em;
+    padding-top: 3em;
+    	
+}
+
+.develop-description-1{
+	height: 30em;
+    width: 40%;
+    margin-right: 1em;
+    float: left;
+}
+
+#others-container{
+
+	height: 31em;
+	display: block;
+	padding-top: 10em;
+    
+}
+
+.others-img-1{
+
+	height: 30em;
+    width: 50%;
+    float: left;
+    	
+}
+
+.others-description-1{
+
+	height: 30em;
+    width: 40%;
+    margin-right: 1em;
+    float: right;
+
+		
+}
+
+
+
+.button-to-pages {
+	background-color: cornsilk;
+    width: 15%;
+    margin: auto;
+    padding: 1em;
+    border-radius: 3em;
+    color: #32373c
+}
+
+.button-to-pages:hover  {
+	background-color: #cec6a5;
+	color: black;
+	transition: 0.5s;
+}
+
+
+
+/* Added styles to the divs and sections in front-page.php to avoid being too complex in this
+style sheet */ 
+
+
+
+/*hover style */
+
+
+h2.post-title {
+	text-align: center;
+    padding-top: 1em;
+}
+
+a {
+    color: #32373c8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: cornflowerblue;
+    transition-duration: 1s;
+    
+}
+
+/*main style*/
+
+#main, footer {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: #3e3b3b;
+}
+
+#main, #menu-menu-1 {
+    margin: 0 2em;
+}
+
+/*footer style*/
+
+#footer-inner h3{
+	color: #555d66;
+	font-size: 1em;
+}
+
+#footer-inner {
+    clear: both;
+    display: block;
+    margin: auto;
+    float: none;
+    text-align: center;
+    padding: 5em 0 5em 0;
+}
+
+header, footer {
+    background: transparent;
+}
+
+#footer-inner > *:first-child {
+    margin-top: 0;
+}
+
+#footer-inner > *:last-child {
+    margin-bottom: 0;
+}
+
+nav {
+    color: white;
+}
+
+#main { 
+    overflow: hidden;
+}
+
+
+/*  Main Content - for every page */
+
+#main-content {
+    
+    margin: 1em 7em;
+    padding: 0 3em 1em;
+    border-radius: 3em;
+    
+}
+
+
+.page-title {
+	text-align: center;
+	padding-top: 1em;
+	
+}
+
+#category-main-content {
+	margin: 1em 7em;
+    padding: 0 3em 1em;
+    border-radius: 3em;
+    background-color: #e2e4e7;
+}
+
+#category-main-content img, .author-font {
+
+	clear: both;
+    display: block;
+    margin: auto;
+    float: none;
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: monospace;
+
+}
+
+
+/*header style*/
+
+header {
+    padding: 2em 0;
+}
+
+
+
+header h1 {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0.1em;
+    right: 0;
+    font-family: Lobster, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: regular;
+    font-size: 4.5em;
+    font-weight: lighter;
+    color: rgb(30, 30, 29);
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 1px rgb(209, 214, 203);
+    
+}
+
+
+/*about me style*/
+
+.about-me-slideIn {
+	animation-duration: 1.3s;
+	animation-name: slidein;
+	
+}
+
+
+/*animation*/
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+
+    
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    
+  }
+}
+
+
+/*menu style*/
+
+#nav-border {
+	width: 50%;
+	margin: auto;
+	margin-bottom: 2em;
+	height: 1em;
+	border-bottom: 1em solid #545454;
+	
+}
+
+#menu-menu-1 {
+    
+    line-height: 1em;
+    padding: 1em 0;
+    text-align: center;
+
+}
+
+#menu-menu-1 li {
+    display: inline-block;
+}
+
+#menu-menu-1 li a {
+    
+    padding: 0.5em 1em;
+    display: block;
+    color: #545454;
+    font-family: 'Verdana';
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-menu-1 li a:hover {
+    
+    color: #6495ec;
+    transition: 0.7s
+
+}
+
+#menu-menu-1 li a.current {
+    color: #000;
+}
+
+#menu-menu-1 li ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    background-color: black;
+}
+
+#menu-menu-1 li:hover ul {
+    display: block;
+    
+}
+
+#menu-menu-1 li ul li {
+    float: none;
+    position: static;
+    line-height: 0;
+}
+
+
+/* video style */
+
+.wp-block-embed {
+    margin-bottom: 1em;
+    clear: both;
+    float: none;
+    margin: auto;
+}
+
+iframe {
+    margin: auto;
+    clear: both;
+    float: none;
+    display: block;
+}
+
+figcaption {
+    font-size: 1em;
+    font-style: oblique;
+}
+
+/*contact page maps */
+
+.my-map {
+    
+    margin-top: 5em;
+    background: cornflowerblue;
+    padding: 5em;
+}
+/* Font styles */
+
+p {
+	font-size: 1.5em;
+
+}
+
+
+
+h2 {
+    font-size: 3em;
+    font-weight: normal;
+    color: #6495ec;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    margin: 1.5em;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-style: oblique;
+    font-family: 'Courgette', cursive;
+}
+
+h4
+{
+    font-size: 1.3em;
+    font-family: 'Courgette', cursive;
+}
+
+/*gallery*/
+
+.wp-block-gallery.is-cropped .blocks-gallery-image a, .wp-block-gallery.is-cropped .blocks-gallery-image img, .wp-block-gallery.is-cropped .blocks-gallery-item a, .wp-block-gallery.is-cropped .blocks-gallery-item img {
+	opacity: 0.6;
+
+
+}
+
+.wp-block-gallery.is-cropped .blocks-gallery-image a, .wp-block-gallery.is-cropped .blocks-gallery-image img, .wp-block-gallery.is-cropped .blocks-gallery-item a, .wp-block-gallery.is-cropped .blocks-gallery-item img:hover {
+	opacity: 1;
+	transition: 0.7s;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    
+
+    
+   #sidebar {
+        display: none;
+   }
+    
+    
+    
+    .logo {
+        padding-left: 0;
+        
+    }
+    
+    .bg_hover img{
+        width: 27em;
+        right: -13%;
+    }
+    
+    .bg_hover {
+        height
+    }
+    
+    .metaslider {
+        display: none;
+    }
+    
+    #portfolio-temple {
+        line-height: 3em;
+    }
+    
+    .logo {
+        transform: rotateX(-30%);
+    }
+    
+   
+    
+    .post-categories {
+        display: none;
+    }
+    
+    #main-content {
+        width: 90%;
+    }
+    
+    #main-content h2 {
+        line-height: 1em;
+    }
+    
+    .page-id-43 {
+        background-size: cover;
+    }
+    
+    #menu-menu-1{
+        display: none;
+    }
+    
+
+    
+}
+
